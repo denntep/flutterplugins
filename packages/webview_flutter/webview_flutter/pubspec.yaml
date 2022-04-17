@@ -22,7 +22,8 @@ dependencies:
   webview_flutter_android: ^2.8.0
   webview_flutter_platform_interface: ^1.8.0
   webview_flutter_wkwebview:
-    git: git@github.com/denntep/flutterplugins
+    git: 
+      url: git@github.com:denntep/flutterplugins.git
 
 dev_dependencies:
   build_runner: ^2.1.5
