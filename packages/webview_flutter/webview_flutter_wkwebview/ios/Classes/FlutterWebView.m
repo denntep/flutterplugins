@@ -98,6 +98,7 @@
 
     WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
     [self applyConfigurationSettings:settings toConfiguration:configuration];
+    [configuration.preferences setValue:@TRUE forKey:@"allowFileAccessFromFileURLs"];
     configuration.userContentController = userContentController;
     [self updateAutoMediaPlaybackPolicy:args[@"autoMediaPlaybackPolicy"]
                         inConfiguration:configuration];
